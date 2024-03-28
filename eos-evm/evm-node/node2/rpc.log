@@ -1,0 +1,83 @@
+ DEBUG [03-27|08:49:40.869 UTC] Initialized sys Plugin
+  INFO [03-27|08:49:40.869 UTC] Initialized RPC Plugin
+       [03-27|08:49:40.870 UTC] Silkrpc build info: eos-evm-rpc version: v0.7.0-824a96a74f2892f74ed475ec81f78051e2dcc914
+       [03-27|08:49:40.870 UTC] Silkrpc libmdbx version: v0.12.0-71-g1cac6536 build: x86_64-ELF-Linux-Release compiler: cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+       [03-27|08:49:40.870 UTC] Silkrpc launched with datadir "./" using 12 contexts, 16 workers
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[0] io_context: 0x7f1'ff4'000'c60 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[0] io_context: 0x7f1'ff4'000'c60 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[1] io_context: 0x7f1'ff4'007'4c0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[1] io_context: 0x7f1'ff4'007'4c0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[2] io_context: 0x7f1'ff4'007'530 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[2] io_context: 0x7f1'ff4'007'530 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[3] io_context: 0x7f1'ff4'007'560 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[3] io_context: 0x7f1'ff4'007'560 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[4] io_context: 0x7f1'ff4'007'5b0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[4] io_context: 0x7f1'ff4'007'5b0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[5] io_context: 0x7f1'ff4'007'bc0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[5] io_context: 0x7f1'ff4'007'bc0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[6] io_context: 0x7f1'ff4'008'0a0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[6] io_context: 0x7f1'ff4'008'0a0 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[7] io_context: 0x7f1'ff4'008'580 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[7] io_context: 0x7f1'ff4'008'580 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[8] io_context: 0x7f1'ff4'008'a60 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[8] io_context: 0x7f1'ff4'008'a60 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[9] io_context: 0x7f1'ff4'008'f40 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[9] io_context: 0x7f1'ff4'008'f40 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[10] io_context: 0x7f1'ff4'009'420 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[10] io_context: 0x7f1'ff4'009'420 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ContextPool::add_context context[11] io_context: 0x7f1'ff4'009'900 wait_mode: blocking
+ DEBUG [03-27|08:49:40.870 UTC] ClientContextPool::add_context context[11] io_context: 0x7f1'ff4'009'900 wait_mode: blocking
+       [03-27|08:49:40.871 UTC] Skip protocol version compatibility check with core services
+ DEBUG [03-27|08:49:40.871 UTC] Signals registered on signal_context 0x7f1'ffb'377'640
+       [03-27|08:49:40.871 UTC] Starting ETH RPC API at 0.0.0.0:8881 ENGINE RPC API at 
+ DEBUG [03-27|08:49:40.871 UTC] ContextPool::start context[0] started: 0x7f1'ff4'000'c60
+ DEBUG [03-27|08:49:40.871 UTC] Multi-thread execution loop start [136'476'360'676'928]
+ DEBUG [03-27|08:49:40.871 UTC] ContextPool::start context[1] started: 0x7f1'ff4'007'4c0
+ DEBUG [03-27|08:49:40.871 UTC] Server::run accepting using io_context 0x7f1'ff4'000'c60...
+ DEBUG [03-27|08:49:40.871 UTC] ContextPool::start context[2] started: 0x7f1'ff4'007'530
+ DEBUG [03-27|08:49:40.871 UTC] Connection::Connection socket 0x7c1'fdc'001'9d0 created
+ DEBUG [03-27|08:49:40.871 UTC] Multi-thread execution loop start [136'476'276'815'424]
+ DEBUG [03-27|08:49:40.871 UTC] ContextPool::start context[3] started: 0x7f1'ff4'007'560
+ DEBUG [03-27|08:49:40.871 UTC] Multi-thread execution loop start [136'476'142'597'696]
+ DEBUG [03-27|08:49:40.871 UTC] Multi-thread execution loop start [136'476'260'030'016]
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[4] started: 0x7f1'ff4'007'5b0
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'007'4c0...
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'007'530...
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fd4'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'007'560...
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[5] started: 0x7f1'ff4'007'bc0
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fc4'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fcc'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'476'243'244'608]
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'476'134'204'992]
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[6] started: 0x7f1'ff4'008'0a0
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'476'125'812'288]
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'007'5b0...
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[7] started: 0x7f1'ff4'008'580
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'007'bc0...
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fc8'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[8] started: 0x7f1'ff4'008'a60
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'475'739'944'512]
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'008'0a0...
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'475'731'551'808]
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[9] started: 0x7f1'ff4'008'f40
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fbc'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[10] started: 0x7f1'ff4'009'420
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fc0'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'008'a60...
+ DEBUG [03-27|08:49:40.872 UTC] ContextPool::start context[11] started: 0x7f1'ff4'009'900
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'475'706'373'696]
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'008'f40...
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fb0'001'9d0 created
+       [03-27|08:49:40.872 UTC] Silkrpc is now running [pid=113, main thread=139'775'335'433'792]
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fa8'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] Multi-thread execution loop start [136'475'697'980'992]
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'009'420...
+ DEBUG [03-27|08:49:40.872 UTC] Server::run accepting using io_context 0x7f1'ff4'009'900...
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fac'001'9d0 created
+ DEBUG [03-27|08:49:40.872 UTC] Connection::Connection socket 0x7c1'fa0'001'9d0 created
+  INFO [03-27|08:49:41.486 UTC] Registration for state changes started
+ DEBUG [03-27|08:49:41.486 UTC] Multi-thread execution loop start [136'476'100'634'176]
+ DEBUG [03-27|08:49:41.486 UTC] Server::run accepting using io_context 0x7f1'ff4'008'580...
+ DEBUG [03-27|08:49:41.486 UTC] Connection::Connection socket 0x7c1'fb4'001'9d0 created
+  INFO [03-27|08:49:41.487 UTC] State changes stream opened

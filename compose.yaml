@@ -1,0 +1,107 @@
+services:
+  # 첫번째 eos-node 
+  # init, fund, make_gen, add_producer 스크립트 실행
+  node1:
+    image: eos:test
+    container_name: eos-node1
+    healthcheck:
+      test: 'stat /success || exit 1'
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - ./eos-evm/shared/node1:/app/config  # 이 부분은 필요에 따라서 디렉토리를 설정할 수 있습니다.
+      - ./eos-evm/script:/script
+      - ./eos-evm/evm-node/genesis:/evm-node/genesis
+      - node1-data:/app/data
+    platform: "linux/amd64"
+    networks:
+      eos-net:
+        ipv4_address: 10.10.1.1
+    ports:
+      - 8888:8888
+      - 8999:8999
+
+  # 두번째 eos-node
+  node2:
+    image: eos-oneshot:test
+    container_name: eos-node2
+    depends_on:
+      node1:
+        condition: service_healthy
+        restart: true # node1 재시작 시, evm-node1도 재시작
+    volumes:
+      - ./eos-evm/shared/node2:/app/config  # 이 부분은 필요에 따라서 디렉토리를 설정할 수 있습니다.
+      - node2-data:/app/data
+    platform: "linux/amd64"
+    networks:
+      eos-net:
+        ipv4_address: 10.10.1.2
+
+  # 첫번째 eos-evm-node 실행
+  evm-node1:
+    image: eos-evm:test
+    container_name: eos-evm-node1
+    depends_on:
+      node1:
+        condition: service_healthy
+        restart: true # node1 재시작 시, evm-node1도 재시작
+    volumes:
+      - ./eos-evm/evm-node/config:/evm-node/config
+      - ./eos-evm/evm-node/genesis:/evm-node/genesis
+      - ./eos-evm/evm-node/node1:/evm-node/log
+    platform: "linux/amd64"
+    networks:
+      eos-net:
+        ipv4_address: 10.10.2.1
+    ports:
+      - 8881:8881
+
+  # 두번째 eos-evm-node 실행
+  evm-node2:
+    image: eos-evm:test
+    container_name: eos-evm-node2
+    depends_on:
+      node1:
+        condition: service_healthy
+        restart: true # node1 재시작 시, evm-node1도 재시작
+    volumes:
+      - ./eos-evm/evm-node/config:/evm-node/config
+      - ./eos-evm/evm-node/genesis:/evm-node/genesis
+      - ./eos-evm/evm-node/node2:/evm-node/log
+    platform: "linux/amd64"
+    networks:
+      eos-net:
+        ipv4_address: 10.10.2.2
+    ports:
+      - 8882:8881
+
+  # 세번째 eos-evm-node 실행
+  evm-node3:
+    image: eos-evm:test
+    container_name: eos-evm-node3
+    depends_on:
+      node1:
+        condition: service_healthy
+        restart: true # node1 재시작 시, evm-node1도 재시작
+    volumes:
+      - ./eos-evm/evm-node/config:/evm-node/config
+      - ./eos-evm/evm-node/genesis:/evm-node/genesis
+      - ./eos-evm/evm-node/node3:/evm-node/log
+    platform: "linux/amd64"
+    networks:
+      eos-net:
+        ipv4_address: 10.10.2.3
+    ports:
+      - 8883:8881
+
+networks:
+  eos-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.0.0/16
+
+volumes:
+  node1-data:
+  node2-data:
